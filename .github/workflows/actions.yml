@@ -7,11 +7,11 @@ on:
       - 'feature/*' # matches feather/feature1, feature/featureB, doesn't match feature/fe/fa
       - 'feature/**'
       - '!feature/featC' #
-    tags:
-      - 'v1.*'
-    paths:
-      - '**.js'
-      - '!filename.js'
+    # tags:
+    #   - 'v1.*'
+    # paths:
+    #   - '**.js'
+    #   - '!filename.js'
     # paths-ignore:
     #   - "docs/**"
     # branches-ignore:
