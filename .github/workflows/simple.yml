@@ -8,8 +8,13 @@ jobs:
 
     steps:
       - name: echo a string
-        run: echo2 "hello world"
+        run: echo "hello world"
       - name: multiline script
         run: |
           node -v
           npm -v
+      - name: python Command
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python
