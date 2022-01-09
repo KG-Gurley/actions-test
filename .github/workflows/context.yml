@@ -1,7 +1,7 @@
 name: Context
-on: push
+on:
+  push
 
-jobs:
   # functions:
   #   runs-on: ubuntu-latest
   #   steps:
@@ -11,15 +11,13 @@ jobs:
   #         echo ${{ startsWith( "hello", "he") }}
   #         echo ${{ endsWith( "hello", "lo") }}
   #         echo ${{ format( "hello {0} {1} {2}"", "World", "!", "!") }}
-
+jobs:
   functions:
     runs-on: ubuntu-latest
     steps:
       - name: echo
-        run: |
-          echo ${{ contains('hello', 'll')}}
-          # echo ${{ startsWith( 'hello', 'he')}}
-          # echo ${{ endsWith('hello', "lo")}}
+        run: echo ${{ contains('hello', 'll')}}
+
   one:
     runs-on: ubuntu-latest
     steps:
