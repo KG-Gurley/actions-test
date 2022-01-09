@@ -18,8 +18,8 @@ jobs:
       - name: echo
         run: |
           echo ${{ contains('hello', 'll')}}
-          echo ${{ startsWith( 'hello', 'he')}}
-          echo ${{ endsWith('hello', "lo")}}
+          # echo ${{ startsWith( 'hello', 'he')}}
+          # echo ${{ endsWith('hello', "lo")}}
   one:
     runs-on: ubuntu-latest
     steps:
