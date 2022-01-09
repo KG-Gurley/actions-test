@@ -20,10 +20,12 @@ jobs:
           entrypoint: '/usr/local/bin/node'
           args: '-v'
       - uses: actions/checkout@v2
+      - name: Show current directory content
+        run: ls -la
       - name: log node version
         uses: docker://node:14-alpine3.14
         with:
-          entrypoint: '../script.sh'
+          entrypoint: ./script.sh
           args: 'Some String'
   # node-docker:
   #   runs-on: ubuntu-latest
