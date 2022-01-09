@@ -16,7 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo
-        run: echo ${{ contains('hello', 'll')}}
+        run: |
+          echo ${{ contains('hello', 'll')}}
 
   one:
     runs-on: ubuntu-latest
