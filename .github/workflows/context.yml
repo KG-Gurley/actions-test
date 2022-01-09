@@ -15,13 +15,11 @@ jobs:
   functions:
     runs-on: ubuntu-latest
     steps:
-      - name: dump
+      - name: echo
         run: |
           echo ${{ contains('hello', 'll')}}
-          # echo ${{ startsWith( "hello", "he") }}
-          # echo ${{ endsWith( "hello", "lo") }}
-          # echo ${{ format( "hello {0} {1} {2}"", "World", "!", "!") }}
-
+          echo ${{ startsWith( 'hello', 'he')}}
+          echo ${{ endsWith('hello', "lo")}}
   one:
     runs-on: ubuntu-latest
     steps:
