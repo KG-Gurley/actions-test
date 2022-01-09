@@ -18,6 +18,7 @@ jobs:
       - name: echo
         run: |
           echo ${{ contains('hello', 'll')}}
+          echo ${{ startsWith( 'hello', 'he')}}
 
   one:
     runs-on: ubuntu-latest
