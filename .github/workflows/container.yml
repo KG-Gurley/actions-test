@@ -19,6 +19,11 @@ jobs:
         with:
           entrypoint: '/usr/local/bin/node'
           args: '-v'
+      - name: log node version
+        uses: docker://node:14-alpine3.14
+        with:
+          entrypoint: './script.sh'
+          args: 'Some String'
   # node-docker:
   #   runs-on: ubuntu-latest
   #   # container:
